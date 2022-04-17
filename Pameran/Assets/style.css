@@ -1,10 +1,12 @@
 main {
   margin: 10px;
   padding: 10px;
+  margin-top: 9vh;
 }
 
 nav {
   padding-left: 20px;
+  height: 8vh;
 }
 
 figure img {
@@ -17,10 +19,6 @@ figure img {
 
 .pb-10 {
   padding-bottom: 10px;
-}
-
-.mt-40 {
-  margin-top: 40px;
 }
 
 .kotak {
