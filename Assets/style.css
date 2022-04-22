@@ -8,9 +8,15 @@ header {
 }
 
 #jumbotron {
-    height: 85%;
+    height: 80%;
 }
 
 .navbar {
-    height: 15%;
+    max-height: 20%;
+}
+
+@media screen and (min-width: 770px) {
+    header {
+        height: 100vh;
+    }
 }
