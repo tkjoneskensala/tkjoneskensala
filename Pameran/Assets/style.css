@@ -17,6 +17,10 @@ figure img {
   max-width: 75% !important;
 }
 
+a {
+  text-decoration: none;
+}
+
 .pl-10 {
   padding-left: 10px;
 }
