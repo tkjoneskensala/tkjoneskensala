@@ -19,27 +19,29 @@
     </head>
 
     <body>
-        <header id="home" class="h-screen max-w-screen pt-[5vh] bg-[url(Images/Background_Web.jpg)] bg-slate-300 bg-opacity-100 bg-cover bg-center bg-blend-multiply overflow-hidden">
+        <header id="home" class="h-screen max-w-screen pt-[5vh] bg-[url(Images/Background_Web.jpg)] bg-slate-300 bg-opacity-100 bg-cover bg-center bg-blend-multiply overflow-hidden || dark:bg-slate-500">
             <section class="h-1/3 object-center mb-4">
                 <img src="Assets/Images/Logo_TKJ1.png" alt="" class="w-auto max-w-[250px] h-auto max-h-full mx-auto">
             </section>
             <section class="h-2/3 mx-16 text-center text-white || md:mx-40">
                 <div class="h-[30%]">
-                    <h1 class="text-3xl font-Tapestry || md:text-6xl">Website Resmi TKJ 1 Skensala<br />Era 2021-2024</h1>
+                    <h1 class="text-3xl font-Tapestry || md:text-6xl dark:text-opacity-5">Website Resmi TKJ 1 Skensala<br />Era 2021-2024</h1>
                 </div>
                 <div class="h-[70%]">
-                    <p class="font-ZillaSlab p-4 text-center rounded-md capitalize text-lg || lg:text-center sm:backdrop-blur-md mdreverse:bg-slate-500/75">Ras-ras kuat di bumi berkumpul disini</p>
+                    <p class="font-ZillaSlab p-4 text-center rounded-md capitalize text-lg text-white || lg:text-center sm:backdrop-blur-md mdreverse:bg-slate-500/75 dark:mdreverse:bg-slate-300/75 dark:mdreverse:text-black">Ras-ras kuat di bumi berkumpul disini</p>
                 </div>
             </section>
         </header>
         
-        <main class="bg-slate-300 || ">
-            <nav class="-mt-16 h-16 px-10 bg-slate-300 sticky top-0 flex shadow-md justify-between || ">
+        <main class="bg-slate-300 || dark:bg-slate-600 dark:text-white">
+            <nav class="-mt-16 h-16 px-10 bg-slate-300 sticky top-0 flex shadow-md justify-between || dark:bg-slate-600 dark:shadow-white/10">
                 <h2 class="font-PTSans text-2xl font-semibold text-center content-end items-end my-auto"><a href="#home">X TKJ 1</a></h2>
-                <div class="my-auto">p</div>
+                <div class="my-auto">
+                    <input type="checkbox" name="Tema" id="toggle" class="block my-auto">
+                </div>
             </nav>
             <div id="content">
-                <section class="p-4">
+                <section class="p-4 || dark:text-white">
                     <h2 class="font-ZillaSlab text-2xl">Pameran Karya Seni Rupa</h2>
                     
                     <h3 class="font-ZillaSlab text-xl pl-5 mt-4">Karya Seni Rupa 2D</h3>
@@ -47,8 +49,8 @@
                     <article class="flex w-full h-full overflow-x-auto snap-x || ">
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Nanda/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Nanda.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -60,8 +62,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Ardina/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Ardina.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -73,8 +75,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Della/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Della.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -86,8 +88,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Febri/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Febri.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -99,8 +101,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Hadi/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Hadi.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -112,8 +114,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Khusi/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Khusi.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -125,8 +127,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Lisna/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Lisna.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -138,8 +140,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Lutfiah/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Lutfiah.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -151,8 +153,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Nana/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Nana.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -164,8 +166,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Gilang/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Gilang.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -177,8 +179,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Nidia/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Nidia.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -190,8 +192,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Dzulfan/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Dzulfan.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -203,8 +205,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Regita/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Regita.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -216,8 +218,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Rehan/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Rehan.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -229,8 +231,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Riska/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Riska.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -242,8 +244,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Selvia/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Selvia.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -255,8 +257,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Siti/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Siti.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -268,8 +270,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/2D/Talitha/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Talitha.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -286,8 +288,8 @@
                     <article class="flex w-full h-full overflow-x-auto snap-x snap-mandatory || ">
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Ade/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Ade.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -299,8 +301,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Fauzan/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Fauzan.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -312,8 +314,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Difa/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Difa.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -325,8 +327,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Diki/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Diki.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -338,8 +340,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Fahrul/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Fahrul.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -351,8 +353,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Iyan/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Iyan.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -364,8 +366,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Fira/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Fira.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -377,8 +379,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Hafizdh/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Hafizdh.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -390,8 +392,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Nizar/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Nizar.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -403,8 +405,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Pirli/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Pirli.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -416,8 +418,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Sayuningsih/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Sayuningsih.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -429,8 +431,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Sindy/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Sindy.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -442,8 +444,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Soraya/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Soraya.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -455,8 +457,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Dias/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Dias.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -468,8 +470,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Surya/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Suraya.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -481,8 +483,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Tiara/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Tiara.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -494,8 +496,8 @@
                         </figure>
                         <figure class="p-2 h-full min-w-[45vw] snap-center || lg:min-w-[15vw]">
                             <a href="Pameran/3D/Vavian/" class="" target="_blank">
-                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-lg shadow-slate-400 || ">
-                                    <div class="h-3/4 border border-slate-400 rounded-sm || ">
+                                <div class="bg-slate-200 p-2 rounded-lg h-fit shadow-[0_4px_6px_0] shadow-slate-400 || dark:bg-slate-400 dark:shadow-slate-300">
+                                    <div class="h-3/4 border border-slate-400 rounded-sm || dark:border-slate-200">
                                         <img src="Pameran/Assets/Images/Thumbnail_Vavian.png" alt="Thumbnail Karya" class="p-1 w-full h-40 mx-auto object-contain">
                                     </div>
                                     <div class="h-16">
@@ -509,23 +511,23 @@
                 </section>
 
                 <section class="h-[75vh] bg-[url(Images/Background_Web_2.jpg)] bg-contain bg-top bg-opacity-50 || md:bg-cover">
-                    <article class="h-full w-full bg-gradient-to-t from-slate-300 flex-col || ">
+                    <article class="h-full w-full bg-gradient-to-t from-slate-300 flex-col || dark:from-slate-600">
                         <h2 class="font-Tapestry text-white leading-[15rem] text-3xl text-center || md:text-6xl md:leading-[20rem]">Sosial Media Kami</h2>
                         <div class="max-h-full w-[90%] mx-auto justify-evenly || lg:flex">
                             <a href="https://instagram.com/xtkj1skensala" target="_blank" class="">                                
-                                <div class="h-10 w-4/5 m-4 mx-auto px-2 bg-slate-300 rounded-xl outline outline-offset-2 outline-slate-200 || lg:min-w-[20vw] lg:h-16">
+                                <div class="h-10 w-4/5 m-4 mx-auto px-2 bg-slate-300 rounded-xl outline outline-offset-2 outline-slate-200 || lg:min-w-[20vw] lg:h-16 dark:bg-slate-500 dark:outline-slate-400">
                                     <img src="Assets/Images/Logo_Instagram.svg" alt="" class="h-full p-1 inline-block">
                                     <span>@xtkj1skensala</span>
                                 </div>
                             </a>
                             <a href="mailto: tkj1skensala@gmail.com" target="_blank" class="">                            
-                                <div class="h-10 w-4/5 m-4 mx-auto px-2 bg-slate-300 rounded-xl outline outline-offset-2 outline-slate-200 || lg:min-w-[20vw] lg:h-16">
+                                <div class="h-10 w-4/5 m-4 mx-auto px-2 bg-slate-300 rounded-xl outline outline-offset-2 outline-slate-200 || lg:min-w-[20vw] lg:h-16 dark:bg-slate-500 dark:outline-slate-400">
                                     <img src="Assets/Images/Logo_Gmail.svg" alt="" class="h-full p-1 inline-block">
                                     <span>tkj1skensala@gmail.com</span>
                                 </div>
                             </a>
                             <a href="https://youtube.com/channel/UCZHIDurw3K78b8xwbH5D7yw" target="_blank" class="">                                
-                                <div class="h-10 w-4/5 m-4 mx-auto px-2 bg-slate-300 rounded-xl outline outline-offset-2 outline-slate-200 || lg:min-w-[20vw] lg:h-16">
+                                <div class="h-10 w-4/5 m-4 mx-auto px-2 bg-slate-300 rounded-xl outline outline-offset-2 outline-slate-200 || lg:min-w-[20vw] lg:h-16 dark:bg-slate-500 dark:outline-slate-400">
                                     <img src="Assets/Images/Logo_YouTube.svg" alt="" class="h-full p-1 inline-block">
                                     <span>TKJ 1 Skensala</span>
                                 </div>
@@ -545,8 +547,17 @@
             </aside>
         </main>
 
-        <footer class="text-center bg-slate-400 p-5 font-mono || ">
+        <footer class="text-center bg-slate-400 p-5 font-mono || dark:bg-slate-500 dark:text-white">
             PubDok Pameran Pagelaran
         </footer>
+
+        <script>
+            const checkbox = document.querySelector('#toggle');
+            const html = document.querySelector('html');
+
+            checkbox.addEventListener('click', function () {
+                checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+            })
+        </script>
     </body>
 </html>
