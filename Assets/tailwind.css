@@ -610,6 +610,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-width: 55vw;
 }
 
+.min-w-\[50vw\] {
+  min-width: 50vw;
+}
+
 .max-w-\[250px\] {
   max-width: 250px;
 }
