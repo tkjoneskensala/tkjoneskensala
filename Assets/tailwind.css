@@ -598,18 +598,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80%;
 }
 
-.min-w-\[45vw\] {
-  min-width: 45vw;
-}
-
-.min-w-\[60vw\] {
-  min-width: 60vw;
-}
-
-.min-w-\[55vw\] {
-  min-width: 55vw;
-}
-
 .min-w-\[50vw\] {
   min-width: 50vw;
 }
@@ -908,11 +896,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .dark\:bg-slate-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:from-slate-600 {
