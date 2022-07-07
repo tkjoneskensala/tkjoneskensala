@@ -13,7 +13,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/Logo_Web.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Tapestry&family=Zilla+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Tapestry&family=Zilla+Slab&family=Poppins&display=swap" rel="stylesheet">
         <style>
             article::-webkit-scrollbar {
                 display: none;
@@ -555,23 +555,24 @@
                         <div class="col-span-2 bg-slate-100 aspect-3/4 rounded-md || dark:bg-slate-400 md:">
                             <div class="w-full h-full scale-90 bg-[url(../Pagelaran/Assets/Images/Vokal_Difa.jpg)] bg-cover bg-center bg-slate-200 bg-blend-hard-light || dark:bg-slate-400"></div>
                         </div>
-                        <div class="col-span-full col-start-4 || md:col-start-5">
+                        <div class="col-span-full col-start-3 || md:col-start-5">
                             <a href="https://drive.google.com/drive/folders/100E-08DMsM5jSLF3hX_F4K-TCTFjewha?usp=sharing" target="_blank">
-                                <div class="font-sans capitalize bg-cyan-500 rounded-full text-sm px-2 py-1 text-center text-white">lihat lebih banyak</div>
+                                <div class="font-Poppins capitalize bg-cyan-500 rounded-full text-sm px-2 py-1 text-center text-white">lihat lebih banyak</div>
                             </a>
                         </div>
                     </article>
 
-                    <article class="mb-4 relative || md:basis-1/2 md:ml-4">
-                        <div class="bg-slate-100 rounded-md py-2 || dark:bg-slate-400">
-                            <h3 class="font-ZillaSlab text-xl text-center">Dokumentasi Video</h3>
-                            <iframe src="https://www.youtube.com/embed/p_F4JhzUwuY" title="PAGELARAN SENI BUDAYA X TKJ 1 || SMKN 1 LEMAHABANG - 13 JUNI 2022" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mx-auto rounded-md scale-90 w-full aspect-video"></iframe>
+                    <article class="mb-4 || md:inline md:basis-1/2 md:ml-4">
+                        <div class="sticky top-20 bg-slate-100 rounded-md py-2 || dark:bg-slate-400">
+                            <div class="relative">
+                                <h3 class="font-ZillaSlab text-xl text-center">Dokumentasi Video</h3>
+                                <iframe src="https://www.youtube.com/embed/p_F4JhzUwuY" title="PAGELARAN SENI BUDAYA X TKJ 1 || SMKN 1 LEMAHABANG - 13 JUNI 2022" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mx-auto rounded-md scale-90 w-full aspect-video"></iframe>
+                                <a href="https://youtu.be/p_F4JhzUwuY" target="_blank" rel="noopener noreferrer" onclick="alert('Yhaha Kena Tipu wkwk\n\nAnda Akan Diarahkan ke YouTube')">
+                                    <div class="absolute w-full h-full top-0"></div>
+                                </a>
+                            </div>
                         </div>
-
-                        <a href="https://youtu.be/p_F4JhzUwuY" target="_blank" rel="noopener noreferrer" onclick="alert('Yhaha Kena Tipu wkwk\n\nAnda Akan Diarahkan ke YouTube')">
-                            <div class="absolute w-full h-full top-0"></div>
-                        </a>
-                </article>
+                    </article>
                 </section>
 
                 <section class="h-[75vh] bg-[url(Images/Background_Web_4.jpg)] bg-contain bg-top bg-opacity-50 || md:bg-cover">
@@ -601,13 +602,22 @@
                 </section>
             </div>
 
-            <aside class="font-PTSans text-center p-4">
-                <section class="text-xl uppercase italic">
+            <aside class="font-PTSans text-center p-4 || md:flex md:mx-4">
+                <section class="text-xl uppercase italic basis-2/5 self-center || md:text-4xl">
                     <p>Menemukan Bug?</p>
                     <p>website Error?</p>
                     <p>Ingin Menyampaikan Kritik dan Saran?</p>
                 </section>
-                <section class="capitalize text-lg p-4">hubungi kami!!</section>
+                <form action=""" name="contact-form" class="basis-3/5">
+                    <fieldset class="border-2 rounded-lg p-4">
+                        <legend class="capitalize text-lg p-2">hubungi kami!!</legend>
+                        <label for="email" class="text-left block">E-Mail:</label>
+                        <input type="email" name="email" aria-describedby="email" id="email" class="block w-full h-8 bg-slate-100 rounded-md px-2 || dark:bg-slate-400" />
+                        <label for="pesan" class="text-left block">Pesan:</label>
+                        <textarea type="text" name="pesan" id="pesan" class="block w-full h-20 resize-none bg-slate-100 rounded-md px-2 py-1 || dark:bg-slate-400"></textarea>
+                        <button type="submit" class="font-Poppins text-sm bg-cyan-500 rounded-lg block my-4 p-1 px-2 text-white || active:bg-cyan-700 active:scale-110 ">Kirim</button>
+                    </fieldset>
+                </form>
             </aside>
         </main>
 
@@ -616,6 +626,7 @@
         </footer>
 
         <script>
+            // Sistem Tema
             if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
             }
@@ -628,6 +639,24 @@
 
             checkbox.addEventListener('click', function () {
                 checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+            })
+
+            // Sistem Formulir
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwGnVhpDwqszlnCK243RFDblfDGl8HIw3HHtP8AmU-zskNwS1Zp44G-UvJ9lFekS-ij/exec'
+            const form = document.forms['contact-form']
+
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    console.log('Success!', response);
+                    alert('Pesan Telah Terkirim');
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert('PESAN GAGAL TERKIRIM!');
+                })
             })
         </script>
     </body>
