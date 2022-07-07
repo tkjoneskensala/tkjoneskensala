@@ -14,6 +14,7 @@ Eh Lupa nggak dibayar huhuhu -->
         <meta name="keywords" content="TKJ, Skensala, TKJ 1, SMKN 1 Lemahabang, IT, Teknologi, Komputer, Jaringan">
         <meta name="author" content="Nizar">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="60">
         <link rel="stylesheet" href="Assets/tailwind.css">
         <title>XI TKJ 1 | Situs Resmi</title>
         <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/Logo_Web.ico">
@@ -617,17 +618,20 @@ Eh Lupa nggak dibayar huhuhu -->
                 <form action=""" name="contact-form" class="basis-3/5">
                     <fieldset class="border-2 rounded-lg p-4">
                         <legend class="capitalize text-lg p-2">hubungi kami!!</legend>
+
                         <label for="email" class="text-left block">E-Mail:</label>
-                        <input type="email" name="email" aria-describedby="email" id="email" class="block w-full h-8 bg-slate-100 rounded-md px-2 || dark:bg-slate-400" />
+                        <input type="email" name="email" aria-describedby="email" placeholder="youremail@example.com" required id="email" class="block w-full h-8 bg-slate-100 rounded-md px-2 || dark:bg-slate-400 dark:placeholder:text-white/50 placeholder:italic" />
+
                         <label for="pesan" class="text-left block">Pesan:</label>
-                        <textarea type="text" name="pesan" id="pesan" class="font-Poppins block w-full h-20 resize-none bg-slate-100 rounded-md px-2 py-1 || dark:bg-slate-400"></textarea>
+                        <textarea type="text" name="pesan" placeholder="Oyy Web nya Ngebug" required id="pesan" class="font-Poppins block w-full h-20 resize-none bg-slate-100 rounded-md px-2 py-1 || dark:bg-slate-400 dark:placeholder:text-white/50 placeholder:italic""></textarea>
+                        
                         <button type="submit" class="font-Poppins text-sm bg-cyan-500 rounded-lg block my-4 p-1 px-2 text-white || active:bg-cyan-700 active:scale-110 ">Kirim</button>
                     </fieldset>
                 </form>
             </aside>
         </main>
 
-        <footer class="text-center bg-slate-400 p-5 font-Poppins || dark:bg-slate-500 dark:text-white">
+        <footer class="text-center bg-slate-400 p-2 font-Poppins || dark:bg-slate-500 dark:text-white">
             Made by<span class="font-mono text-sm"><sub>People Ora Duwe Ayank</sub></span>
         </footer>
 
@@ -664,6 +668,20 @@ Eh Lupa nggak dibayar huhuhu -->
                     alert('PESAN GAGAL TERKIRIM!');
                 })
             })
+
+            // Sambutan Pengunjung Baru
+            const CacheLogIn = "NUMBER";
+
+            function Sambutan() {
+                if (typeof(Storage) !== "undefined") {
+                    if ((localStorage.getItem(CacheLogIn) === "undefined") || (localStorage.getItem(CacheLogIn) === null)) {
+                        alert("Selamat Datang!\n\nHai Pengunjung Baru");
+                        localStorage.setItem(CacheLogIn, 1);
+                    }
+                }
+            }
+
+            Sambutan();
         </script>
     </body>
 </html>
