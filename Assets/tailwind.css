@@ -807,6 +807,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
 }
@@ -819,44 +823,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url(Images/Background_Web_3.jpg);
 }
 
-.bg-\[url\(Images\/Pagelaran_1\.jpg\)\] {
-  background-image: url(Images/Pagelaran_1.jpg);
+.bg-\[url\(\.\.\/Pagelaran\/Assets\/Images\/Akad\.jpg\)\] {
+  background-image: url(../Pagelaran/Assets/Images/Akad.jpg);
 }
 
-.bg-\[url\(Images\/Pagelaran_2\.jpg\)\] {
-  background-image: url(Images/Pagelaran_2.jpg);
+.bg-\[url\(\.\.\/Pagelaran\/Assets\/Images\/MC\.jpg\)\] {
+  background-image: url(../Pagelaran/Assets/Images/MC.jpg);
 }
 
-.bg-\[url\(Images\/Pagelaran_3\.jpg\)\] {
-  background-image: url(Images/Pagelaran_3.jpg);
+.bg-\[url\(\.\.\/Pagelaran\/Assets\/Images\/Dansa\.jpg\)\] {
+  background-image: url(../Pagelaran/Assets/Images/Dansa.jpg);
 }
 
-.bg-\[url\(Images\/Pagelaran_4\.jpg\)\] {
-  background-image: url(Images/Pagelaran_4.jpg);
+.bg-\[url\(\.\.\/Pagelaran\/Assets\/Images\/Tari\.jpg\)\] {
+  background-image: url(../Pagelaran/Assets/Images/Tari.jpg);
 }
 
-.bg-\[url\(Images\/Pagelaran_5\.jpg\)\] {
-  background-image: url(Images/Pagelaran_5.jpg);
+.bg-\[url\(\.\.\/Pagelaran\/Assets\/Images\/Akustik\.jpg\)\] {
+  background-image: url(../Pagelaran/Assets/Images/Akustik.jpg);
 }
 
-.bg-\[url\(Images\/Pagelaran_6\.jpg\)\] {
-  background-image: url(Images/Pagelaran_6.jpg);
+.bg-\[url\(\.\.\/Pagelaran\/Assets\/Images\/Flashmob_1\.jpg\)\] {
+  background-image: url(../Pagelaran/Assets/Images/Flashmob_1.jpg);
 }
 
-.bg-\[url\(Images\/Pagelaran_7\.jpg\)\] {
-  background-image: url(Images/Pagelaran_7.jpg);
+.bg-\[url\(\.\.\/Pagelaran\/Assets\/Images\/Flashmob_2\.jpg\)\] {
+  background-image: url(../Pagelaran/Assets/Images/Flashmob_2.jpg);
 }
 
-.bg-\[url\(Images\/Pagelaran_8\.jpg\)\] {
-  background-image: url(Images/Pagelaran_8.jpg);
+.bg-\[url\(\.\.\/Pagelaran\/Assets\/Images\/Vokal_Sayuningsih\.jpg\)\] {
+  background-image: url(../Pagelaran/Assets/Images/Vokal_Sayuningsih.jpg);
 }
 
-.bg-\[url\(Images\/Pagelaran_9\.jpg\)\] {
-  background-image: url(Images/Pagelaran_9.jpg);
+.bg-\[url\(\.\.\/Pagelaran\/Assets\/Images\/Dance\.jpg\)\] {
+  background-image: url(../Pagelaran/Assets/Images/Dance.jpg);
 }
 
-.bg-\[url\(Images\/Pagelaran_10\.jpg\)\] {
-  background-image: url(Images/Pagelaran_10.jpg);
+.bg-\[url\(\.\.\/Pagelaran\/Assets\/Images\/Vokal_Difa\.jpg\)\] {
+  background-image: url(../Pagelaran/Assets/Images/Vokal_Difa.jpg);
 }
 
 .bg-\[url\(Images\/Background_Web_4\.jpg\)\] {
@@ -1024,6 +1028,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-blend-mode: multiply;
 }
 
+.bg-blend-darken {
+  background-blend-mode: darken;
+}
+
+.bg-blend-lighten {
+  background-blend-mode: lighten;
+}
+
+.bg-blend-hard-light {
+  background-blend-mode: hard-light;
+}
+
+.bg-blend-soft-light {
+  background-blend-mode: soft-light;
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1089,6 +1109,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .dark .dark\:text-opacity-5 {
   --tw-text-opacity: 0.05;
+}
+
+.dark .dark\:bg-blend-darken {
+  background-blend-mode: darken;
 }
 
 .dark .dark\:shadow-white\/10 {
