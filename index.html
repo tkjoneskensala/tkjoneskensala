@@ -10,11 +10,11 @@ Eh Lupa nggak dibayar huhuhu -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Official Website of TKJ 1 Skensala">
-        <meta name="keywords" content="TKJ, Skensala, TKJ 1, SMKN 1 Lemahabang, IT, Teknologi, Komputer, Jaringan">
+        <meta name="description" content="Situs Resmi TKJ 1 2021-2024. Pembuatan website ini awalnya ditujukan untuk keperluan Pameran Karya Seni.">
+        <meta name="keywords" content="TKJ, Skensala, TKJ 1, X TKJ, X TKJ 1, SMKN 1 Lemahabang, IT, Teknologi, Komputer, Jaringan">
         <meta name="author" content="Nizar">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="60">
+        <meta http-equiv="refresh" content="">
         <link rel="stylesheet" href="Assets/tailwind.css">
         <title>XI TKJ 1 | Situs Resmi</title>
         <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/Logo_Web.ico">
@@ -45,7 +45,7 @@ Eh Lupa nggak dibayar huhuhu -->
         
         <main class="bg-slate-300 || dark:bg-slate-600 dark:text-white">
             <nav class="-mt-16 h-16 px-10 bg-slate-300 sticky top-0 flex shadow-md justify-between z-10 || dark:bg-slate-600 dark:shadow-white/10">
-                <h2 class="font-PTSans text-2xl font-semibold text-center content-end items-end my-auto"><a href="#home">X TKJ 1</a></h2>
+                <h2 class="font-PTSans text-2xl font-semibold text-center content-end items-end my-auto"><a href="#home">XI TKJ 1</a></h2>
                 <div class="my-auto">
                     <input type="checkbox" name="Tema" id="toggle" class="my-auto hidden">
                     <label for="toggle" class="rounded-full block overflow-hidden bg-white aspect-square w-10 || ">
@@ -574,7 +574,7 @@ Eh Lupa nggak dibayar huhuhu -->
                             <div class="relative">
                                 <h3 class="font-ZillaSlab text-xl text-center">Dokumentasi Video</h3>
                                 <img src="Pagelaran/Assets/Images/Video_Pagelaran.png" alt="Ceritanya mah Video YouTube" class="mx-auto rounded-md scale-90 w-full aspect-video" />
-                                <a href="https://youtu.be/p_F4JhzUwuY" target="_blank" rel="noopener noreferrer" onclick="alert('Yhaha Kena Tipu wkwk\n\nAnda Akan Diarahkan ke YouTube')">
+                                <a href="https://youtu.be/p_F4JhzUwuY" target="_self" rel="noopener noreferrer" onclick="PopupBox('Yhaha Kena Tipu wkwk\n\nAnda Akan Diarahkan ke YouTube')">
                                     <div class="absolute w-full h-full top-0"></div>
                                 </a>
                             </div>
@@ -607,6 +607,15 @@ Eh Lupa nggak dibayar huhuhu -->
                         </div>
                     </article>
                 </section>
+
+                <section id="loading" class="fixed flex flex-col justify-center bg-slate-100/50 w-full h-full text-center text-4xl text-black top-0 z-10 invisible">Loading</section>
+
+                <section id="popup" class="bg-slate-100/50 fixed flex flex-col justify-center w-full h-full text-right text-black top-0 z-10 invisible">
+                    <div id="" class="bg-white w-4/5 h-fit self-center rounded-lg block || md:w-2/5">
+                        <span id="popupitem" class="bg-slate-100/50 text-xl font-Poppins m-4 mb-2 p-1 block text-center border-2"></span>
+                        <button onclick="ClosePopup()" class="bg-cyan-500 text-white px-2 py-1 rounded-md text-sm content-end mr-1 mb-1">Okee</button>
+                    </div>
+                </section>
             </div>
 
             <aside class="font-PTSans text-center p-4 || md:flex md:mx-4">
@@ -625,7 +634,7 @@ Eh Lupa nggak dibayar huhuhu -->
                         <label for="pesan" class="text-left block">Pesan:</label>
                         <textarea type="text" name="pesan" placeholder="Oyy Web nya Ngebug" required id="pesan" class="font-Poppins block w-full h-20 resize-none bg-slate-100 rounded-md px-2 py-1 || dark:bg-slate-400 dark:placeholder:text-white/50 placeholder:italic""></textarea>
                         
-                        <button type="submit" class="font-Poppins text-sm bg-cyan-500 rounded-lg block my-4 p-1 px-2 text-white || active:bg-cyan-700 active:scale-110 ">Kirim</button>
+                        <button type="submit" id="button" class="font-Poppins text-sm bg-cyan-500 rounded-lg block my-4 p-1 px-2 text-white || active:bg-cyan-700 active:scale-110 ">Kirim</button>
                     </fieldset>
                 </form>
             </aside>
@@ -660,14 +669,35 @@ Eh Lupa nggak dibayar huhuhu -->
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
                     console.log('Success!', response);
-                    alert('Pesan Telah Terkirim');
+                    PopupBox('Pesan Telah Terkirim');
                     form.reset();
+                    LoadMenu.classList.add('invisible')
                 })
                 .catch(error => {
                     console.error('Error!', error.message);
-                    alert('PESAN GAGAL TERKIRIM!');
+                    PopupBox('PESAN GAGAL TERKIRIM!')
                 })
+                AnimationButtons()
             })
+
+            // Kostum Pop Up Box
+            popup = document.getElementById('popup')
+
+            function PopupBox (pesan = 'Terima Kasih') {
+                document.getElementById('popupitem').innerText = pesan
+                popup.classList.remove('invisible')
+            }
+
+            function ClosePopup () {
+                popup.classList.add('invisible')
+            }
+
+            // Animasi Tombol Kirim
+            const LoadMenu = document.getElementById('loading')
+
+            function AnimationButtons() {
+                LoadMenu.classList.remove('invisible')
+            }
 
             // Sambutan Pengunjung Baru
             const CacheLogIn = "NUMBER";
@@ -675,8 +705,8 @@ Eh Lupa nggak dibayar huhuhu -->
             function Sambutan() {
                 if (typeof(Storage) !== "undefined") {
                     if ((localStorage.getItem(CacheLogIn) === "undefined") || (localStorage.getItem(CacheLogIn) === null)) {
-                        alert("Selamat Datang!\n\nHai Pengunjung Baru");
-                        localStorage.setItem(CacheLogIn, 1);
+                        PopupBox("Hai Pengunjung Baru\n\nSelamat Datang!");
+                        localStorage.setItem(CacheLogIn, true);
                     }
                 }
             }
