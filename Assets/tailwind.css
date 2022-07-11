@@ -862,6 +862,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / 0.1);
 }
 
+.border-slate-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -1214,6 +1219,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .dark\:bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-slate-500\/50 {
+  background-color: rgb(100 116 139 / 0.5);
+}
+
+.dark .dark\:bg-slate-600\/50 {
+  background-color: rgb(71 85 105 / 0.5);
 }
 
 .dark .dark\:from-slate-600 {

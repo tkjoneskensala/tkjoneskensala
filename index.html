@@ -10,11 +10,11 @@ Eh Lupa nggak dibayar huhuhu -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="refresh" content="">
         <meta name="description" content="Situs Resmi TKJ 1 2021-2024. Pembuatan website ini awalnya ditujukan untuk keperluan Pameran Karya Seni.">
         <meta name="keywords" content="TKJ, Skensala, TKJ 1, X TKJ, X TKJ 1, SMKN 1 Lemahabang, IT, Teknologi, Komputer, Jaringan">
         <meta name="author" content="Nizar">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="">
         <link rel="stylesheet" href="Assets/tailwind.css">
         <title>XI TKJ 1 | Situs Resmi</title>
         <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/Logo_Web.ico">
@@ -610,9 +610,9 @@ Eh Lupa nggak dibayar huhuhu -->
 
                 <section id="loading" class="fixed flex flex-col justify-center bg-slate-100/50 w-full h-full text-center text-4xl text-black top-0 z-10 invisible">Loading</section>
 
-                <section id="popup" class="bg-slate-100/50 fixed flex flex-col justify-center w-full h-full text-right text-black top-0 z-10 invisible">
-                    <div id="" class="bg-white w-4/5 h-fit self-center rounded-lg block || md:w-2/5">
-                        <span id="popupitem" class="bg-slate-100/50 text-xl font-Poppins m-4 mb-2 p-1 block text-center border-2"></span>
+                <section id="popup" class="bg-slate-100/50 fixed flex flex-col justify-center w-full h-full text-right text-black top-0 z-10 invisible || dark:bg-slate-500/50 dark:text-white">
+                    <div id="" class="bg-slate-100 w-4/5 h-fit self-center rounded-lg block || md:w-2/5 dark:bg-slate-400">
+                        <span id="popupitem" class="bg-slate-100/50 text-xl font-Poppins m-4 mb-2 p-1 block text-center border-2 || dark:bg-slate-500/50 border-slate-300"></span>
                         <button onclick="ClosePopup()" class="bg-cyan-500 text-white px-2 py-1 rounded-md text-sm content-end mr-1 mb-1">Okee</button>
                     </div>
                 </section>
@@ -681,7 +681,7 @@ Eh Lupa nggak dibayar huhuhu -->
             })
 
             // Kostum Pop Up Box
-            popup = document.getElementById('popup')
+            const popup = document.getElementById('popup')
 
             function PopupBox (pesan = 'Terima Kasih') {
                 document.getElementById('popupitem').innerText = pesan
