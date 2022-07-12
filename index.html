@@ -16,7 +16,7 @@ Eh Lupa nggak dibayar huhuhu -->
         <meta name="author" content="Nizar">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Assets/tailwind.css">
-        <title>XI TKJ 1 | Situs Resmi</title>
+        <title>XI TKJ 1 - Situs Resmi | BUKAN SITUS MATI</title>
         <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/Logo_Web.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +55,7 @@ Eh Lupa nggak dibayar huhuhu -->
                 </div>
             </nav>
             <div id="content">
-                <h2 class="font-ZillaSlab text-2xl p-4 font-semibold">Pameran Karya Seni Rupa</h2>
+                <h2 class="font-ZillaSlab text-2xl p-4 font-semibold">Pameran Karya Seni Rupa - 2022</h2>
                     
                 <section class="px-4 || dark:text-white md:m-4">
                     <h3 class="font-ZillaSlab text-xl pl-5">Karya Seni Rupa 2D</h3>
@@ -528,7 +528,7 @@ Eh Lupa nggak dibayar huhuhu -->
                     </article>
                 </section>
 
-                <h2 class="font-ZillaSlab text-2xl p-4 font-semibold">Pagelaran Seni</h2>
+                <h2 class="font-ZillaSlab text-2xl p-4 font-semibold">Pagelaran Seni - 2022</h2>
 
                 <section class="px-4 min-h-screen || dark:text-white md:m-4 lg:flex">
                     <article class="mb-6 grid grid-cols-6 gap-4  || md:basis-1/2 md:mr-4">
@@ -644,74 +644,6 @@ Eh Lupa nggak dibayar huhuhu -->
             Made by<span class="font-mono text-sm"><sub>People Ora Duwe Ayank</sub></span>
         </footer>
 
-        <script>
-            // Sistem Tema
-            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-            }
-            else {
-            document.documentElement.classList.remove('dark')
-            }
-
-            const checkbox = document.querySelector('#toggle');
-            const html = document.querySelector('html');
-
-            checkbox.addEventListener('click', function () {
-                checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
-            })
-
-            // Sistem Formulir
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwGnVhpDwqszlnCK243RFDblfDGl8HIw3HHtP8AmU-zskNwS1Zp44G-UvJ9lFekS-ij/exec'
-            const form = document.forms['contact-form']
-
-            form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    console.log('Success!', response);
-                    PopupBox('Pesan Telah Terkirim');
-                    form.reset();
-                    LoadMenu.classList.add('invisible')
-                })
-                .catch(error => {
-                    console.error('Error!', error.message);
-                    PopupBox('PESAN GAGAL TERKIRIM!')
-                })
-                AnimationButtons()
-            })
-
-            // Kostum Pop Up Box
-            const popup = document.getElementById('popup')
-
-            function PopupBox (pesan = 'Terima Kasih') {
-                document.getElementById('popupitem').innerText = pesan
-                popup.classList.remove('invisible')
-            }
-
-            function ClosePopup () {
-                popup.classList.add('invisible')
-            }
-
-            // Animasi Tombol Kirim
-            const LoadMenu = document.getElementById('loading')
-
-            function AnimationButtons() {
-                LoadMenu.classList.remove('invisible')
-            }
-
-            // Sambutan Pengunjung Baru
-            const CacheLogIn = "NUMBER";
-
-            function Sambutan() {
-                if (typeof(Storage) !== "undefined") {
-                    if ((localStorage.getItem(CacheLogIn) === "undefined") || (localStorage.getItem(CacheLogIn) === null)) {
-                        PopupBox("Hai Pengunjung Baru\n\nSelamat Datang!");
-                        localStorage.setItem(CacheLogIn, true);
-                    }
-                }
-            }
-
-            Sambutan();
-        </script>
+        <script src="Assets/script.js"></script>
     </body>
 </html>
