@@ -1,17 +1,21 @@
 // Sistem Tema
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-document.documentElement.classList.add('dark')
-}
-else {
-document.documentElement.classList.remove('dark')
-}
-
+const isTheme = "isTheme";
 const checkbox = document.querySelector('#toggle');
 const html = document.querySelector('html');
 
 checkbox.addEventListener('click', function () {
     checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
-})
+    checkbox.checked ? localStorage.setItem(isTheme, "dark") : localStorage.setItem(isTheme, "light");
+});
+
+if (localStorage.theme === 'dark' || ((!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches))) {
+    if ((localStorage.getItem(isTheme) === "dark") || (localStorage.getItem(isTheme) == undefined)) {
+    document.documentElement.classList.add('dark')
+    }
+}
+else {
+    document.documentElement.classList.remove('dark')
+}
 
 // Sistem Formulir
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwGnVhpDwqszlnCK243RFDblfDGl8HIw3HHtP8AmU-zskNwS1Zp44G-UvJ9lFekS-ij/exec'
@@ -53,7 +57,7 @@ function AnimationButtons() {
 }
 
 // Sambutan Pengunjung Baru
-const CacheLogIn = "NUMBER";
+const CacheLogIn = "isLOGIN";
 
 function Sambutan() {
     if (typeof(Storage) !== "undefined") {
