@@ -924,6 +924,10 @@ video {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(Images\/Background_Web_5\.jpg\)\] {
+  background-image: url(Images/Background_Web_5.jpg);
+}
+
 .from-slate-300 {
   --tw-gradient-from: #cbd5e1;
   --tw-gradient-to: rgb(203 213 225 / 0);
