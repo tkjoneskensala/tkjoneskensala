@@ -916,16 +916,12 @@ video {
   background-image: url(Images/Background_Web_3.jpg);
 }
 
-.bg-\[url\(Images\/Background_Web_4\.jpg\)\] {
-  background-image: url(Images/Background_Web_4.jpg);
+.bg-\[url\(Images\/Background_Web_5\.jpg\)\] {
+  background-image: url(Images/Background_Web_5.jpg);
 }
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(Images\/Background_Web_5\.jpg\)\] {
-  background-image: url(Images/Background_Web_5.jpg);
 }
 
 .from-slate-300 {
