@@ -21,5 +21,6 @@ const closedMore = () => {
         showMoreItems[i].classList.add("hidden");
     };
     showMoreButton.innerText = "Selengkapnya";
+    showMoreButton.setAttribute("onclick", "showMore(1)")
     window.scroll(0, window.scrollY - 100);
 };
