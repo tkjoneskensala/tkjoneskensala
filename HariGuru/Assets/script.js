@@ -14,6 +14,7 @@ const showMore = n => {
         showMoreButton.innerText = "Tutup";
         showMoreButton.setAttribute("onclick", "closedMore()")
     };
+    window.scroll(0, window.scrollY + 225);
 };
 
 const closedMore = () => {
@@ -21,6 +22,7 @@ const closedMore = () => {
         showMoreItems[i].classList.add("hidden");
     };
     showMoreButton.innerText = "Selengkapnya";
-    showMoreButton.setAttribute("onclick", "showMore(1)")
-    window.scroll(0, window.scrollY - 100);
+    showMoreButton.setAttribute("onclick", "showMore(1)");
+    showItemMax = 0;
+    window.scroll(0, window.scrollY - 1000);
 };
