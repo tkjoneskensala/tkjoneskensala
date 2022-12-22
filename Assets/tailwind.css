@@ -822,6 +822,46 @@ video {
   scroll-snap-align: center;
 }
 
+.scroll-m-16 {
+  scroll-margin: 4rem;
+}
+
+.scroll-m-32 {
+  scroll-margin: 8rem;
+}
+
+.-scroll-m-16 {
+  scroll-margin: -4rem;
+}
+
+.scroll-m-20 {
+  scroll-margin: 5rem;
+}
+
+.scroll-m-40 {
+  scroll-margin: 10rem;
+}
+
+.scroll-m-36 {
+  scroll-margin: 9rem;
+}
+
+.scroll-mt-16 {
+  scroll-margin-top: 4rem;
+}
+
+.-scroll-mt-16 {
+  scroll-margin-top: -4rem;
+}
+
+.scroll-mt-32 {
+  scroll-margin-top: 8rem;
+}
+
+.-scroll-mt-32 {
+  scroll-margin-top: -8rem;
+}
+
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
